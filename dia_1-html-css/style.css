@@ -1,0 +1,48 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.titulo {
+    font-size: 40px;
+    color: greenyellow;
+}
+
+.subtitulo-1 {
+    font-size: 34px;
+    color: lightgreen;
+}
+
+#navegacion {
+    background-color: aquamarine;
+    width: 600px;
+    /* padding: 30px;
+    margin: 45px; */
+    border: 3px blueviolet solid;
+    display: flex;
+    gap: 12px;
+}
+
+.listas {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 300px 500px;
+    grid-template-rows: 250px 450px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #ff7f50;
+}
+
+.btn:hover {
+    background-color: rgba(255, 127, 80, 0.7);
+}
+
+@media (max-width: 500px) {
+    #navegacion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
