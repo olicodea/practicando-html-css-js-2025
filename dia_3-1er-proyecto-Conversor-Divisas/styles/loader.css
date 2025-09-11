@@ -1,0 +1,67 @@
+:root {
+    --purple-950: #3d0a61;
+    --purple-900: #581f81;
+    --purple-800: #7236a6;
+    --purple-400: rgb(194, 136, 248, 0.5);
+    --purple-300: #b184d8;
+    --purple-200: #d8b4fe;
+    --purple-150: #e6d6fe;
+    --purple-100: #f3e8ff;
+    --gray-900: #181818;
+}
+
+.card-loader {
+    width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    background-color: var(--purple-900);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+}
+
+.card__skeleton {
+    background-image: linear-gradient(
+        90deg,
+        var(--purple-400) 0px,
+        rgb(194, 136, 248, 90%) 40px,
+        var(--purple-400) 80px
+    );
+    background-size: 300%;
+    background-position: 100% 0;
+    border-radius: inherit;
+    animation: shimmer 1.5s infinite;
+}
+
+.card__content {
+    display: flex;
+    gap: 10px;
+}
+
+.card__title {
+    height: 20px;
+    margin-bottom: 0px;
+}
+
+.card__description {
+    width: 100%;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__data {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+@keyframes shimmer {
+    to {
+        background-position: -100% 0;
+    }
+}

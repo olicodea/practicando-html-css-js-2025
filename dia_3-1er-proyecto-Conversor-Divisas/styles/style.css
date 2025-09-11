@@ -1,0 +1,128 @@
+@import "loader.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--gray-900);
+    color: var(--purple-200);
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-900);
+    padding: 10px 0;
+    width: 100%;
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 16px 20px;
+    width: 100%;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.section-divisas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 16px;
+    width: 100%;
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    color: var(--purple-150);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+
+    h3 {
+        color: var(--purple-100);
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+        font-weight: medium;
+        color: var(--purple-100);
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        color: var(--purple-150);
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1366px) {
+}
+
+hr {
+    border: 1px solid var(--purple-100);
+    opacity: 0.8;
+    border-radius: 20px;
+    border-width: 1.9px;
+}
