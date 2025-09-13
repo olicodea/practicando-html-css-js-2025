@@ -56,15 +56,19 @@ async function obtenerCotizaciones(endpoint) {
     return await response.json();
 }
 
+async function obtenerOtrasMonedas() {
+    const cotizaciones = await obtenerCotizaciones(endpoints.otrasMonedas);
+    return cotizaciones.filter((cotizacion) => cotizacion.moneda !== "USD");
+}
+
 async function cargarCotizaciones() {
     const sectionDolares = document.querySelector("#section-dolares");
     const sectionOtrasMonedas = document.querySelector(
         "#section-otras-monedas"
     );
     const cotizacionesDolar = await obtenerCotizaciones(endpoints.dolares);
-    const cotizacionesOtrasMonedas = await obtenerCotizaciones(
-        endpoints.otrasMonedas
-    );
+    const cotizacionesOtrasMonedas = await obtenerOtrasMonedas();
+
     const sectionContentDolares = agregarCards(cotizacionesDolar);
     const sectionContentOtrasMonedas = agregarCards(cotizacionesOtrasMonedas);
 
