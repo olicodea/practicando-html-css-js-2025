@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de pedidos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/order.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de pedidos</h1>
+    </header>
+    <main>
+        <h2>Detalle de pedido Nº <span id="order-number"></span></h2>
+        <section class="section-order">
+            <article class="card">
+                <h3>Datos del cliente</h3>
+                <p class="client-data">Nombre: <span id="client-name"></span></p>
+                <p class="client-data">Contacto: <span id="client-contact"></span></p>
+            </article>
+            <article class="card">
+                <h3>Productos</h3>
+                <ul class="product-list">
+                    <li>Nombre <span>Cantidad</span></li>
+                </ul>
+            </article>
+            <article class="card">
+                <p class="total">Total: <span class="total-amount" id="total-amount-span"></span></p>
+            </article>
+            <a href="./index.html" class="btn self-start">Volver</a>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> VOID_OLI</p>
+    </footer>
+
+    <script src="./js/order-detail.js"></script>
+</body>
+
+</html>

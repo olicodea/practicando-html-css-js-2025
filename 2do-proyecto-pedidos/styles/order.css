@@ -1,0 +1,159 @@
+@import "./main.css";
+
+.section-order {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form {
+    display: flex;
+    gap: 2em;
+
+    .form-order-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+    }
+}
+
+input {
+    border-radius: 4px;
+    border: none;
+}
+
+.input-form {
+    padding: 6px;
+    font-size: 1em;
+}
+
+.input-table {
+    padding: 6px 1px;
+    font-size: 0.9em;
+    width: 60px;
+    text-align: center;
+    border: 1px solid var(--blue-300);
+    background-color: white;
+}
+
+.input-table:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.table-container {
+    max-width: 700px;
+}
+
+.table-wrapper {
+    max-height: 250px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.table-order {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-order th {
+    background-color: var(--blue-300);
+    color: var(--blue-950);
+    font-weight: bold;
+    padding: 8px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table-order td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--blue-300);
+}
+
+.table-order th:nth-child(1),
+.table-order td:nth-child(1) {
+    width: 60%;
+    text-align: left;
+}
+
+.table-order th:nth-child(2),
+.table-order td:nth-child(2) {
+    width: 25%;
+    text-align: left;
+}
+
+.table-order th:nth-child(3),
+.table-order td:nth-child(3) {
+    width: 15%;
+    text-align: left;
+}
+
+.table-order tbody tr:hover td {
+    background-color: var(--blue-150);
+}
+
+.section-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.btn-cancelar {
+    background-color: rgb(196, 53, 53);
+    transition: backgroud-color 0.4s ease;
+}
+
+.btn-cancelar:hover { 
+    background-color: rgb(179, 48, 48)
+}
+
+.total {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-amount {
+    font-weight: bold;
+}
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1em;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li:nth-child(1) {
+        font-weight: bold;
+    }
+}
+
+.product-quantity {
+    text-align: center;
+}
+
+.client-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .section-order {
+        width: 100%;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 1em;
+    }
+}

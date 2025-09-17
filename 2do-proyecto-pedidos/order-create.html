@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de pedidos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/order.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de pedidos</h1>
+    </header>
+    <main>
+        <h2>Creación de pedido</h2>
+        <section class="section-order">
+            <article class="card">
+                <h3>Datos del cliente</h3>
+                <form action="" class="form" id="form-order">
+                    <div class="form-order-item">
+                        <label for="">Nombre</label>
+                        <input class="input-form" type="text" required>
+                    </div>
+                    <div class="form-order-item">
+                        <label for="">Contacto</label>
+                        <input class="input-form" type="text" required>
+                    </div>
+                </form>
+            </article>
+            <article class="card table-container">
+                <h3>Productos</h3>
+                <div class="table-wrapper">
+                    <table class="table-order">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-products">
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <section class="section-buttons">
+            <a href="./index.html" class="btn btn-cancelar">Cancelar</a>
+            <button type="submit" class="btn" id="btn-guardar" form="form-order">Guardar pedido</button>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> VOID_OLI</p>
+    </footer>
+
+    <script src="./js/order-create.js" type="module"></script>
+</body>
+</html>

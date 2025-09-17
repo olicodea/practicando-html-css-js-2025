@@ -1,0 +1,42 @@
+[
+    {
+        "id": "tralalero-tralala",
+        "name": "Tralalero Tralala",
+        "price": 8000
+    },
+    {
+        "id": "tung-tung-sahur",
+        "name": "Tung Tung Sahur",
+        "price": 8000
+    },
+    {
+        "id": "karker-karkar-kurkur",
+        "name": "Karker karkar Kurkur",
+        "price": 8000
+    },
+    {   
+        "id": "la-grande-combinazione",
+        "name": "La grande combinazione",
+        "price": 14000
+    },
+    {   
+        "id": "capuchin-asesino",
+        "name": "Capuchin Asesino",
+        "price": 8000
+    },
+    {   
+        "id": "soporte-mando-mano-picccolo",
+        "name": "Soporte mando mano picccolo",
+        "price": 24000
+    },
+    {
+        "id": "soporte-auris-simple",
+        "name": "Soporte auris simple",
+        "price": 8000
+    },
+    {
+        "id": "apoya-vaso-arcoiris",
+        "name": "Apoya vaso arcoiris",
+        "price": 1000
+    }
+]
